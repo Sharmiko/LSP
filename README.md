@@ -32,7 +32,7 @@ public:
 ```
 
 This implementations violate LSP principle.
-> Ff S is a subtype of T, then objects of type T may be replaced with objects of type S (an object of type T may be substituted with any object of a subtype S) without altering any of the desirable properties of the program.
+> If S is a subtype of T, then objects of type T may be replaced with objects of type S (an object of type T may be substituted with any object of a subtype S) without altering any of the desirable properties of the program.
 
 Because It cannot pass simple test of substitution.
 ```c++
