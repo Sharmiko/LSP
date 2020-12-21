@@ -20,7 +20,7 @@ protected:
 
 ```
 
-Bad implementation ofSquare:
+Bad implementation of Square:
 
 ```c++
 class BadSquare : public Rectangle {
