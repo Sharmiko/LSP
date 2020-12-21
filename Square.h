@@ -4,11 +4,14 @@
 #include "Rectangle.h"
 
 
-class Square : public Rectangle {
+class Square {
 public:
-    Square(double width, double height) : Rectangle(width, height) {}
+    Square(double width);
     void setWidth(double width);
-    void setHeight(double height);
+    double getWidth();
+
+private:
+    Rectangle* rectangle;
 };
 
 

@@ -1,8 +1,9 @@
 #include <iostream>
 #include <cassert>
-#include "Rectangle.h"
-#include "Square.h"
 
+#include "Rectangle.h"
+#include "BadSquare.h"
+#include "Square.h"
 
 void invariant(Rectangle& r)
 {
@@ -20,8 +21,15 @@ int main()
     Rectangle rectangle(100.0, 20.0);
     invariant(rectangle);
 
-    Square square(20.0, 20.0);
-    invariant(square);
+    BadSquare bad_square(20.0);
+    // bad implementation of square does 
+    // not satisfy LSP principle
+    invariant(bad_square);
+
+
+    // Does not violate LSP principle
+    // Square is implemented with composition
+    Square square(15.0);
 
     return 0;
 }

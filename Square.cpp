@@ -1,15 +1,20 @@
 #include "Square.h"
 
 
-void Square::setWidth(double width)
+Square::Square(double width)
 {
-    this->width = width;
-    this->height = width;
+    this->rectangle = new Rectangle(width, width);
 }
 
 
-void Square::setHeight(double height)
+void Square::setWidth(double width)
 {
-    this->height = height;
-    this->width = height;
+    this->rectangle->setWidth(width);
+    this->rectangle->setHeight(width);
+}
+
+
+double Square::getWidth()
+{
+    return this->rectangle->getWidth();
 }
