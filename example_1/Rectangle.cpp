@@ -20,13 +20,13 @@ void Rectangle::setHeight(double height)
 }
 
 
-double Rectangle::getWidth()
+double Rectangle::getWidth() const 
 {
     return this->width;
 }
 
 
-double Rectangle::getHeight()
+double Rectangle::getHeight() const
 {
     return this->height;
 }

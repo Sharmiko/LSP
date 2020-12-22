@@ -1,4 +1,7 @@
-**Examples illustrating liskov substitution principle**
+## Examples illustrating liskov substitution principle
+</br>
+
+### <b>Example 1</b>
 
 It shows simple example of Rectangle/Square implementation through inheritance.
 
@@ -66,3 +69,10 @@ private:
 ```
 
 In this case we can no longer pass `Square` in place of `Rectangle`, this ensures that LSP is not broker, but there is still some trade-offs.
+
+
+</br>
+
+### Example 2
+
+#### TODO
